@@ -1,0 +1,357 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+ 
+}
+
+:root {
+  --cor-fundo: #261730; /*261730*/ /*2c2258*/
+  --cor-destaque: #be09be;
+  --cor-destaque-secundario: #4d0a3c;/*6b0d54*/
+  --cor-texto: #d4d4d4;
+  --cor-texto-secundario: #a8a6a8;
+  --cor-verde: #0a6411;
+}
+
+html {
+  
+  overflow-x: hidden;
+}
+
+body{
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1 {
+  color: var(--cor-destaque);
+}
+
+h2, h3 {
+  color: var(--cor-texto);
+}
+
+p {
+  color: var(--cor-texto-secundario);
+}
+
+/*Cabeçalho*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--cor-destaque-secundario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.fotonav {
+  position: relative;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar {
+  list-style: none;
+  
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.activo {
+  color: var(--cor-destaque);
+}
+
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--cor-texto);
+  cursor: pointer;
+  display: none;
+}
+
+/* inicio */
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.fotoinicio {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+
+.meunome {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.prof {
+  position: relative;
+  width: 32.8rem;
+}
+
+.inicio p {
+  font-size: 1.1rem;
+}
+
+.conteudo {
+
+  margin-left: 40px;  
+  max-width: 600px;
+  text-align: justify;
+}
+
+/*Botão Whatsapp*/
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 8rem;
+  height: 100%;
+  background-color: var(--cor-verde);
+  color: var(--cor-texto);
+  font-size: 1.2rem;
+  border: .2rem solid var(--cor-verde);
+  border-radius: .8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cor-fundo);
+  z-index: -1; 
+  transition: .5s;
+}
+
+.btn:hover::before{
+  width: 100%;
+} 
+
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fotoinicio {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/*Redes Sociais*/
+.social {
+  position: absolute;
+  bottom: 7rem;
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+
+.social a {
+  position: relative;
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-texto);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: .2rem solid var(--cor-destaque-secundario);
+  border-radius: 10%;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.social a:hover{
+  color: var(--cor-fundo);
+  color: #ffffff;
+}
+
+.social a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cor-destaque-secundario);
+  z-index: -1;
+  overflow: hidden;
+  transition: .5s;
+
+}
+
+
+.social a:hover::before {
+  width: 100%;
+
+
+}
+
+/*----------Estudos----------*/
+.tituloformacao {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.informacaoestudos {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+.estudo1 {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.estudo1 {
+  border: .2rem solid var(--cor-destaque-secundario);
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 200px;
+  text-align: justify;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.estudo1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cor-destaque-secundario);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.estudo1:hover::before {
+  width: 100%;
+  
+}
+
+
+
+h2 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+
+
+/*----------Footer----------*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background-color: var(--cor-destaque-secundario);
+}
+
+.footer .texto p {
+  font-size: 1.6rem;
+
+}
+
+.subir a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background-color: var(--cor-destaque);
+  border: .2rem solid var(--cor-destaque);
+  border-radius: .6rem;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+.subir a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--cor-fundo);
+  z-index: -1;
+  transition: .5s;
+}
+
+.subir a:hover::before {
+  width: 100%;
+
+}
+.subir a i {
+  font-size: 1.4rem;
+  color: var(--cor-fundo);
+  transition: .5s;
+}
+
+.subir a:hover i {
+  color: var(--cor-destaque);
+
+}
