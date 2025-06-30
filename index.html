@@ -2,325 +2,343 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Esmirna Amneris</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=PT+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="header">
-        <img class="fotonav" src="/img/esmirna.png" alt="foto">
-
+        <a href="#inicio" class="logo">
+            <img class="fotonav" src="img/esmirna.png" alt="fotoesmirna">
+        </a>
         <i class="fas fa-bars" id="menu-icon"></i>
-
         <nav class="navbar">
-            <ul>
-                <li><a href="#inicio" class="activo">Inicio</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <li><a href="#inicio" class="activo">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#estudos">Formação</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </nav>
     </header>
 
-    <section class="inicio secao-com-fundo cor-padrao" id="inicio">
-        <div class="pessoal">
+    <section class="inicio" id="inicio">
+        <div class="painel-esquerdo">
             <div class="fotoprincipal">
-                <img class="fotoinicio" src="/img/esmirna.png" alt="fotoesmirnamaior">
+                <img class="fotoinicio" src="img/esmirna.png" alt="fotoinicio">
+                
             </div>
             <div class="social">
-                <a href="https://www.linkedin.com/in/esmirnamarino/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/EsmirnaM" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/EsmirnaAmneris" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/esmirnamarino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5521992201075" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
-        <div class="conteudo">
-            <h1 class="meunome">Olá, sou Esmirna Marino A. </h1>
-            <h2 class="prof"> Junior Developer </h2>
+        <div class="inicio-conteudo-texto">
+            <h3 class="prof">Olá, eu sou</h3>
+            <h1 class="meunome"><span>Esmirna Amneris</span></h1>
+            <p>Seja bem-vindo(a) ao meu portfólio! Aqui você vai encontrar um pouco sobre a minha trajetória e projetos.</p>
             <div class="botao_inicio">
-                <a href="#" class="btn">Vamos Conversar!</a>
-                <a href="#" class="btn">Baixar currículo!</a>
+                <a href="https://drive.google.com/file/d/15S3w2OKcDIRTp__UlTTpVsp6GZIiQqmg/view?usp=sharing" class="btn" target="_blank">Currículo</a>
             </div>
+            
         </div>
+        
     </section>
 
-    <section class="sobre secao-com-fundo cor-cinza-escuro" id="sobre">
-
+    <section class="sobre" id="sobre">
         <h2>Sobre <span>Mim</span></h2>
-
         <div class="primeira_parte">
-            <div class="fotosobre">
-                <img class="fotoesmirna2" src="/img/foto2.jpg" alt="fotoesmirna2">
-            </div>
-            <div class="resumo">
-                <p>
+            <img class="fotoesmirna2" src="img/foto2.jpg" alt="fotoesmirna2">
+             <p class="resumo">
                     Profissional colombiana com 12 anos no Brasil e forte paixão por tecnologia.
                     Formada em <span class="negrita">Análise e Desenvolvimento de Sistemas</span> ,
                     trago também minha experiência em Administração e Contabilidade,
                     que me dá uma visão completa para criar soluções técnicas e estratégicas.
-                </p>
-                <p>
+                    <br><br>
                     Minhas habilidades em programação foram aprimoradas com dois cursos intensivos
                     em <span class="negrita">programação back-end</span> e <span class="negrita">análise de dados com Python e powerBI</span>. Adoro programar, computadores e design gráfico.
-                </p>
-            
-            </div>
-        </div>
-        <div class="segunda_parte">
-            <div class="tecnologias">
-                <h2>Habilidades</h2>
-                <div class="habilidades">
-                    <ul class="tecno">
-                        <li>
-                            <span class="html"><i class="fa-brands fa-html5"></i></span>
-                            <div class="barra_html">Html</div>
-                        </li>
-                        <li>
-                            <span class="css3"><i class="fa-brands fa-css3-alt"></i></span>
-                            <div class="barra_css">Css</div>
-                        </li>
-                        <li>
-                            <span class="js"><i class="fa-brands fa-js"></i></span>
-                            <div class="barra_js">JavaScript</div>
-                        </li>
-                        <li>
-                            <span class="react"><i class="fa-brands fa-react"></i></span>
-                            <div class="barra_react">React</div>
-                        </li>
-                        <li>
-                            <span class="node"><i class="fab fa-node-js"></i></span>
-                            <div class="barra_node">Node.js</div>
-                        </li>
-                        <li>
-                            <span class="python"><i class="fa-brands fa-python"></i></span>
-                            <div class="barra_python">Python</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </p>
+
         </div>
     </section>
 
-    <section class="estudos secao-com-fundo cor-preto" id="formacao">
-        <h2 class="tituloformacao">Minha <span>Formação Acadêmica</span></h2>
-        <div class="formacao">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="card_estudo swiper-slide">
+    <section class="habilidades" id="habilidades">
+        <h2>Minhas <span>Habilidades</span></h2>
+
+        <div class="soft-hard">
+            <h3>Habilidades técnicas (Hard skills):</h3> 
+            <p>Node.js, React, React Native, Css, JavaScript, Phyton, SQL Server Management Studio, 
+                Power BI.
+            </p>
+            <h3>Habilidades interpessoais  (soft skills):</h3> 
+            <p>Adaptabilidade, aprendizado e atualização contínuos, habilidades de trabalho em equipe, multidisciplinariedade, senso crítico, visão técnica.
+            </p>
+        </div>
+        <ul class="tecno">
+            <li>
+                <span class="html"><i class="fab fa-html5"></i></span>
+                <div class="barra_html">HTML</div>
+            </li>
+            <li>
+                <span class="css3"><i class="fab fa-css3-alt"></i></span>
+                <div class="barra_css">CSS</div>
+            </li>
+            <li>
+                <span class="js"><i class="fab fa-js-square"></i></span>
+                <div class="barra_js">JavaScript</div>
+            </li>
+            <li>
+                <span class="react"><i class="fab fa-react"></i></span>
+                <div class="barra_react">React</div>
+            </li>
+            <li>
+                <span class="node"><i class="fab fa-node-js"></i></span>
+                <div class="barra_node">Node.js</div>
+            </li>
+            <li>
+                <span class="python"><i class="fab fa-python"></i></span>
+                <div class="barra_python">Python</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="estudos" id="estudos">
+        <h2 class="tituloformacao">Minha <span>Formação</span></h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card_estudo">
                         <div class="logo_estudo">
-                            <img class="img_estudo" src="/img/estacio.png" alt="Logo da Estácio">
+                            <img class="img_estudo" src="img/estacio.png" alt="Logo Estácio">
                         </div>
                         <div class="info_estudo">
-                            <h2>03/2022 - 11/2024</h2>
-                            <h3>Análise e Desenvolvimento de Sistemas</h3>
-                            <h4>Universidade Estácio de Sá</h4>
-                            <p>Projetar, testar, implementar e manter sistemas computacionais e software.</p>
+                            <h2>2022 - 2024</h2>
+                            <h3>Tecnologia em Analise e Desenvolvimento de Sistemas</h3>
+                            <h4>Faculdade Estácio de Sá</h4>
+                            <p>
+                               Profissional capacitada em lógica de programação, banco de dados (SQL, NoSQL) e desenvolvimento de software 
+                               (frontend, backend). Domino metodologias ágeis (Scrum, Kanban) para projetar, testar e implementar soluções tecnológicas.
+                            </p>
                         </div>
                     </div>
-
-                    <div class="card_estudo swiper-slide">
+                </div>
+                <div class="swiper-slide">
+                    <div class="card_estudo">
                         <div class="logo_estudo">
-                            <img class="img_estudo" src="/img/estacio.png" alt="Logo da Estácio">
+                            <img class="img_estudo" src="img/toti.png" alt="Logo Estácio">
                         </div>
                         <div class="info_estudo">
-                            <h2>05/2023 - 08/2023</h2>
+                            <h2>06/2022 - 09/2022</h2>
+                            <h3>Programação Back-End</h3>
+                            <h4>Toti diversidade</h4>
+                            <p>
+                                Os conteúdos abordados foram:
+                                Lógica de Programação, Gerenciamento de Projetos, Metodologias ágeis,
+                                Versionamento de Código - Git, HTML 5, CSS 3, JavaScript, Testes de software,
+                                Mongo, SQLite, REST API e NodeJS.
+                            </p>
+                            <P>102 HORAS</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo">
+                            <img class="img_estudo" src="img/toti.png" alt="Logo Estácio">
+                        </div>
+                        <div class="info_estudo">
+                            <h2>05/2023 - 10/2023</h2>
                             <h3>Análise de Dados</h3>
-                            <h4>Toti Diversidade</h4>
-                            <p>Python, Power BI, SQL, Git, Lógica de Programação e Introdução à Tecnologia.</p>
+                            <h4>Parceria com o INSTITUTO NU</h4>
+                            <p>
+                                Introdução a Tecnologia, Ferramentas tecnológicas, Lógica de Programação,
+                                Versionamento de Código - Git, SQL, Python, Power BI, Gerenciamento de Projetos e
+                                metodologias ágeis
+                                fundamentos de análise de dados, visualização e machine learning com Python. 
+                                Exploro bibliotecas como Pandas, NumPy.
+                            </p>
+                            <P>253 HORAS</P>
                         </div>
                     </div>
-
-                    <div class="card_estudo swiper-slide">
-                        <div class="logo_estudo">
-                            <img class="img_estudo" src="/img/estacio.png" alt="Logo da Estácio">
-                        </div>
-                        <div class="info_estudo">
-                            <h2>07/2022 - 10/2022</h2>
-                            <h3>Back-End Developer</h3>
-                            <h4>Toti Diversidade</h4>
-                            <p>Lógica de Programação, Git, HTML, CSS, JavaScript e Testes de software.</p>
-                        </div>
-                    </div>
-
-                    <div class="card_estudo swiper-slide">
-                        <div class="logo_estudo">
-                            <img class="img_estudo" src="/img/estacio.png" alt="Logo da Estácio">
-                        </div>
-                        <div class="info_estudo">
-                            <h2>01/2018-11/2021</h2>
-                            <h3>Bacharel em Administração</h3>
-                            <h4>Universidade Estácio de Sá</h4>
-                            <p>Foram abordados conhecimentos para gerenciar recursos financeiros e humanos de uma empresa.</p>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo">
+                            <img class="img_estudo" src="img/estacio.png" alt="Logo Estácio">
+                        </div>
+                        <div class="info_estudo">
+                            <h2>08/2018 - 12/2021</h2>
+                            <h3>Bacharelado em Administração</h3>
+                            <h4>Faculdade Estácio de Sá</h4>
+                            <p>
+                                Foram abordados conhecimentos para gerenciar recursos financeiros, 
+                                materiais ou humanos de uma empresa para definir estratégias e supervisionar o dia a dia da organização, 
+                                traçar metas, criar políticas internas, realizando auditorias e analisis de resultados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo">
+                            <img class="img_estudo" src="img/cefa.jpg" alt="Logo Estácio">
+                        </div>
+                        <div class="info_estudo">
+                            <h2>08/2018 - 12/2021</h2>
+                            <h3>Auxiliar de contabilidade</h3>
+                            <h4>CEFA</h4>
+                            <p>
+                                Profissional com experiência em lançamentos contábeis, conciliação de contas e organização de documentos fiscais. 
+                                Apoio na elaboração de balancetes e demonstrações financeiras, garantindo a precisão e conformidade. 
+                                Conhecimento em sistemas contábeis e legislação tributária.
+                            </p>
+                            <p>1026 horas</p>
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
-    <section class="cursos secao-com-fundo cor-cinza-escuro" id="cursos">
-        <h2 class="titulocursos">Meus <span>Cursos</span></h2>
-        <div class="formacao">
-            <div class="informacaocursos">
-                <div class="curso">
-                    <div class="info_curso">
-                        <h2>04/2013 - 40h</h2>
-                        <h3>Adobe Photoshop CS5</h3>
-                        <h4>Servicio Nacional de Aprendizaje (SENA)</h4>
-                        <p>Os conteudos abordados foram:
-                            Introdução, área de trabalho, o color, seleção del área de trabajo,
-                            edição, transformação, retoque de imagens, dibujar e pintar,
-                            canales e máscaras, capas e filtros,
-                            textos, guardar e exportar imagens, trucos e efeitos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="curso">
-                    <h2>03/2023 - 7h</h2>
-                    <h3>Git do básico ao avançado</h3>
-                    <h4>Udemy</h4>
-                    <p>Os conteudos abordados foram:,
-                        Conceitos sólidos a respeito de controle de versão usando Git,
-                        versionamento de arquivos e controle completo sobre o fluxo do versionamento,
-                        inúmeros comandos do básico ao avançado e como fazer o versionamento do seu projeto,
-                        teoria e prática com exemplos reais do dia a dia e
-                        como trabalhar com repositórios locais e remotos.
-                    </p>
-                </div>
-
-                <div class="curso">
-                    <h2>03/2022 - 11/2024</h2>
-                    <h3>Autoconhecimento e Desenvolvimento de liderança</h3>
-                    <h4>Toti</h4>
-                    <p>Competencias:</p>
-                    <p>Trabalho em equipe, desenvolvimento de gestão e liderança,
-                        estratégias para motivar e comprometer equipes, fatores criticos de sucesso na liderança,
-                        innovação e cultura organizacional.</p>
-                </div>
+    <section class="cursos" id="cursos">
+        <h2 class="titulocursos">Cursos <span>complementares</span></h2>
+        <div class="informacaocursos">
+            <div class="curso">
+                <h3>Git do básico ao avançado</h3>
+                <h4>UDEMY</h4>
+                <h5>7 Horas</h5>
+                <p>
+                    Domínio de Git para controle de versão, colaboração em equipe e gestão de projetos. Habilidade em GitHub para hospedagem de repositórios, pull requests e workflows de desenvolvimento.
+                </p>
             </div>
+            <div class="curso">
+                <h3>Autoconhecimento e Desenvolvimento de Liderança</h3>
+                <p>
+                    Desenvolvimento de habilidades em liderança, comunicação eficaz, resolução de conflitos e motivação de equipes. Foco em gestão de projetos e otimização de fluxos de trabalho.
+                </p>
+            </div>
+            <div class="curso">
+                <h3>Formação em Adobe Photoshop CS5</h3>
+                <p>
+                    Domínio em edição de imagens, tratamento de fotos, criação de artes digitais e manipulação de gráficos, utilizando ferramentas essenciais para projetos visuais.
+                </p>
+            </div>
+            <div class="curso">
+                <h3>NodeJS do zero a maestria</h3>
+                <h4>UDEMY</h4>
+                <h5>38 Horas</h5>               
+                <p>
+                    Os conteudos abordados foram:
+                    Aprender Node do básico ao avançado, criar projetos completos com Express, aprender o padrão MVC com Node,
+                    Criação de API com Node e Express, Operações e integração de Node JS com MySQL, Operações e integraçãode Node JS com Sequelize,
+                    Operações e integraçãode Node JS com MongoDB, Operações e integraçãode Node JS com Mongoose
+                </p>
+            </div>
+           
         </div>
     </section>
 
-    <section class="projetos secao secao-com-fundo cor-preto" id="projetos">
-        <h2 class="titulo_projeto">Meus <span>projetos</span></h2>
+    <section class="projetos" id="projetos">
+        <h2 class="titulo_projeto">Meus <span>Projetos</span></h2>
         <div class="projetos_container">
-            <article class="projeto_card">
-                <img src="img/projeto_1.png" alt="foto_projeto" class="img_projetos">
+            <div class="projeto_card">
+                <img src="img/empregamigrante.png" alt="Projeto 1">
                 <div class="projeto_modal">
-                    <span class="subtitulo_projeto">Website</span>
-                    <h2 class="titulo_projeto">EmpregaMigrantes</h2>
+                    <h2>EMPREGA MIGRANTES</h2>
                     <p class="paragrafo_projeto">Promovendo a empregabilidade de refugiados e migrantes. criado com react e node.js</p>
                     <div class="botoes_projeto">
-                        <a href="https://github.com/EsmirnaM/projetofinalvagas-master" target="_blank" class="botao_projeto">
-                            Repositório
-                        </a>
-                        <a href="https://github.com/seu-usuario/repositorio" target="_blank" class="botao_projeto">
-                            Video
-                        </a>
+                        <a href="#" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
+                        <a href="#" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Demo</a>
                     </div>
                 </div>
-            </article>
-
-            <article class="projeto_card">
-                <img src="img/inmi.png" alt="foto projeto" class="img_projetos">
+            </div>
+            <div class="projeto_card">
+                <img src="img/inmi.png" alt="Projeto 2">
                 <div class="projeto_modal">
-                    <span class="subtitulo_projeto">Website</span>
-                    <h2 class="titulo_projeto">INMI</h2>
-                    <p class="paragrafo_projeto"> Instituto Multicultural dos Migrantes INMI, website criado em Wordpress</p>
-
+                    <h2>INMI</h2>
+                    <p class="paragrafo_projeto">Instituto Multicultural dos Migrantes INMI, website criado em Wordpress</p>
                     <div class="botoes_projeto">
-                        <a href="https://inmiead.com.br" target="_blank" class="botao_projeto">
-                            Repositório
-                        </a>
-                        <a href="https://github.com/seu-usuario/repositorio" target="_blank" class="botao_projeto">
-                            Video
-                        </a>
+                        <a href="https://inmiead.com.br" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
+                        <a href="#" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Demo</a>
                     </div>
                 </div>
-            </article>
-
-            <article class="projeto_card">
-                <img src="img/esmirna.jpg" alt="foto projeto" class="img_projetos">
+            </div>
+            <div class="projeto_card">
+                <img src="img/portfolio.png" alt="Projeto 3">
                 <div class="projeto_modal">
-                    <span class="subtitulo_projeto">Api</span>
-                    <h2 class="titulo_projeto">Cardápio</h2>
+                    <h2>Projeto de Portfólio</h2>
+                    <p class="paragrafo_projeto">Meu portfólio pessoal, construído com HTML, CSS e JavaScript puro, destacando minhas habilidades e projetos. Design responsivo e interativo.</p>
                     <div class="botoes_projeto">
-                        <a href="https://github.com/seu-usuario/repositorio" target="_blank" class="botao_projeto">
-                            Repositório
-                        </a>
-                        <a href="https://github.com/seu-usuario/repositorio" target="_blank" class="botao_projeto">
-                            Video
-                        </a>
+                        <a href="https://github.com/EsmirnaM/Portfolio" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
+                        <a href="#" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Demo</a>
                     </div>
                 </div>
-            </article>
+            </div>
+           
         </div>
     </section>
 
-    <section class="contato secao-com-fundo cor-cinza-escuro" id="contato">
-        <h2 class="cabecalho">Fale <span>comigo!</span></h2>
-
+    <section class="contato" id="contato">
+        <h2 class="cabecalho">Entre em <span>Contato</span></h2>
         <form action="email.php" method="POST" id="formulario-contato">
             <div class="input-box">
                 <div class="input_column">
-                    <label class="input_label" for="nome"> Nome
-                        <input type="text" id="nome" class="form-control" name="nome" placeholder="Joao" required>
-                        <span class="focus"></span>
-                    </label>
-
-                    <label class="input_label" for="sobrenome"> Sobrenome
-                        <input type="text" id="sobrenome" class="form-control" name="sobrenome" placeholder="Silva" required>
-                        <span class="focus"></span>
-                    </label>
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Nome" id="nome" required autocomplete="given-name">
                 </div>
-
                 <div class="input_column">
-                    <label class="input_label" for="email"> E-mail
-                        <input type="text" id="email" class="form-control email" name="email" placeholder="seuemail@domain.com">
-                        <span class="focus"></span>
-                    </label>
-
-                    <label class="input_label" for="telefone"> Telefone
-                        <input type="text" id="telefone" class="form-control" name="telefone" placeholder="21992201075" required>
-                        <span class="focus"></span>
-                    </label>
-                </div>
-
-                <div class="input_column"> <label class="input_label" for="mensagem"> Mensagem
-                        <textarea id="mensagem" class="form-control" name="mensagem" placeholder="Deixe uma mensagem" required></textarea>
-                        <span class="focus"></span>
-                    </label>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" placeholder="Sobrenome" id="sobrenome" required autocomplete="family-name">
                 </div>
             </div>
-
-            <button type="submit" id="botaoenviar" class="mt-4 btn btn-primary"> Enviar </button>
+            <div class="input-box">
+                <div class="input_column">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="E-mail" id="email" required autocomplete="email">
+                </div>
+                <div class="input_column">
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" placeholder="Telefone" id="telefone" required autocomplete="tel">
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input_column">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea cols="30" rows="10" placeholder="Sua mensagem" id="mensagem" required autocomplete="off"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="botaoenviar" class="btn">Enviar mensagem</button>
         </form>
     </section>
 
     <footer class="footer">
         <div class="texto">
-            <p> &copy; 2023 by Esmirna </p>
+            <p>Copyright &copy; 2024 by Esmirna Amneris | Todos os direitos reservados.</p>
         </div>
-
         <div class="subir">
-            <a href="#inicio"><i class="fas fa-solid fa-arrow-up"></i></a>
+            <a href="#inicio"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
