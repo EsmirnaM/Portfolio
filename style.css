@@ -93,7 +93,7 @@ p {
 .contato,
 .cursos,
 .habilidades {
-    padding-top: 5rem;
+    padding-top: 6rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -104,7 +104,7 @@ p {
 }
 
 .inicio {
-    background-image: url('./img/banner.png');
+    background-image: url('./img/banner.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -235,12 +235,12 @@ p {
     }
 }
 
-/* Animação para digitação  */
+/* Animação para digitação   */
 @keyframes typing-span {
     from {
         width: 0;
     }
-    to {        
+    to {          
         width: 100%;
     }
 }
@@ -264,7 +264,7 @@ p {
     font-weight: 700;
     line-height: 1.3;
     white-space: nowrap; 
-    overflow: hidden;    
+    overflow: hidden;      
     display: inline-block; 
     border-right: .15em solid transparent; 
     text-align: left;
@@ -272,9 +272,9 @@ p {
 
 .meunome span {
     display: inline-block; 
-    overflow: hidden;     
-    width: 0;              
-    animation: typing-span 3.5s steps(30, end) forwards 2s;
+    overflow: hidden;      
+    width: 0;               
+    animation: typing-span 1.5s steps(30, end) forwards 2s;
 }
 
 
@@ -300,12 +300,12 @@ p {
     animation:
         cursor-appear 0.1s linear forwards, 
         blink-caret 0.7s step-end infinite,
-        cursor-desaparece 0.1s linear forwards; 
+        cursor-desaparece 0.2s linear forwards; 
 
     animation-delay: 
         0.5s, 
         0.5s, 
-        4s;   
+        6s;    
 }
 
 section {
@@ -476,6 +476,7 @@ section {
 
 .sobre {
     width: 100%;
+    padding-top: 7rem;
     min-height: 100vh;
     overflow: hidden;
     text-align: center;
@@ -520,7 +521,7 @@ section {
 
 .soft-hard {
     background-color: var(--cor-fundo-secundario); 
-    padding: 2.5rem 2rem; 
+    padding: 1rem 2rem; 
     border-radius: 10px; 
     max-width: 800px; 
     margin: 0 auto 1rem auto; 
@@ -570,8 +571,11 @@ section {
 .habilidades h2 {
     font-family: 'PT Sans', sans-serif;
     font-size: 2rem;
-    color: var(--cor-texto-destaque);
     margin-bottom: 3rem;
+}
+
+.habilidades h2 span {
+    color: var(--cor-texto-destaque); /* A cor roxa que você quer para "Habilidades" */
 }
 
 /*-----------------------------------------------Tecnologias---------------------------------------------*/
@@ -650,16 +654,23 @@ section {
     z-index: 2;
 }
 
-.mongo { /* Não achei o elemento com esta classe no HTML, mas mantive a regra. */
-    color: #4db33d;
+.mongo {
+    color: #4db33d; 
     border: 3px solid #4db33d;
-    box-shadow: 5px 5px 5px rgba(113, 209, 238, 0.4);
+    box-shadow: 5px 5px 5px rgba(77, 179, 61, 0.4);
+    z-index: 2;
+}
+
+.sql {
+    color: #007ACC; 
+    border: 3px solid #007ACC;
+    box-shadow: 5px 5px 5px rgba(0, 122, 204, 0.4);
     z-index: 2;
 }
 
 /*-------------------barrinhas------------------*/
 
-.barra_html, .barra_css, .barra_js, .barra_react, .barra_node, .barra_python {
+.barra_html, .barra_css, .barra_js, .barra_react, .barra_node, .barra_python, .barra_mongo, .barra_sql{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -697,9 +708,19 @@ section {
     border: 3px solid #3776ab;
     box-shadow: 0px 5px 5px rgba(8, 106, 136, 0.4);
 }
+.barra_mongo {
+    border: 3px solid #4db33d;
+    box-shadow: 0px 5px 5px rgba(77, 179, 61, 0.3);
+}
+.barra_sql {
+    border: 3px solid #007ACC;
+    box-shadow: 0px 5px 5px rgba(0, 122, 204, 0.3);
+}
+
+
 
 .barra_html::before, .barra_css::before, .barra_js::before,
-.barra_react::before, .barra_node::before, .barra_python::before {
+.barra_react::before, .barra_node::before, .barra_python::before, .barra_mongo::before, .barra_sql::before{
     content: '';
     position: absolute;
     top: 0;
@@ -716,6 +737,8 @@ section {
 .barra_react::before { background-image: linear-gradient(to right, #ffff, #61dafb); }
 .barra_node::before { background-image: linear-gradient(to right, #ffff, #68a063); }
 .barra_python::before { background-image: linear-gradient(to right, #ffff, #3776ab); }
+.barra_mongo::before { background-image: linear-gradient(to right, #ffff, #4db33d); }
+.barra_sql::before { background-image: linear-gradient(to right, #ffff, #007ACC); }
 
 
 /* ------------------------------Estudos------------------------------ */
@@ -1326,12 +1349,14 @@ section {
     }
 
     .barra_html:hover::before, .barra_css:hover::before, .barra_js:hover::before,
-    .barra_react:hover::before, .barra_node:hover::before, .barra_python:hover::before {
+    .barra_react:hover::before, .barra_node:hover::before, .barra_python:hover::before, 
+    .barra_mongo:hover::before, .barra_sql:hover::before  {
         width: 100%;
     }
-    .barra_html:hover, .barra_css:hover, .barra_js:hover,
-    .barra_react:hover, .barra_node:hover, .barra_python:hover {
+    .barra_html:hover, .barra_css:hover, .barra_js:hover, .barra_react:hover, 
+    .barra_node:hover, .barra_python:hover, .barra_mongo:hover,.barra_sql:hover{
         color: var(--cor-texto-escuro);
+        font-weight: bold;
     }
 
     .curso:hover::before {
@@ -1430,10 +1455,13 @@ section {
         text-align: center;
     }
 
+   
     .meunome {
         font-size: 2rem;
         min-width: 22rem;
+        text-align: center;
     }
+   
 
     .primeira_parte {
         flex-direction: column;
@@ -1447,28 +1475,27 @@ section {
         text-align: center;
     }
 
+  
     .tecno {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
         padding: 0 2rem;
         gap: 1.5rem;
     }
 
     .tecno li {
         justify-content: flex-start;
-    }
-
-    .tecno li span {
-        width: 50px;
-        height: 50px;
+     
+        width: 100%; 
     }
 
     .barra_html, .barra_css, .barra_js, .barra_react, .barra_node, .barra_python {
         width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
+        max-width: 250px; 
+        margin: 0 auto; 
         padding: 0 0.5rem;
         text-align: left;
     }
+  
 
     .informacaocursos {
         flex-direction: column;
@@ -1519,6 +1546,13 @@ section {
     }
 
     .resumo {
-        font-size: 1rem;
+    
     }
+
+
+    .tecno {
+        grid-template-columns: 1fr; /* Uma coluna */
+        padding: 0 1rem;
+    }
+    
 }
