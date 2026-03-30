@@ -7,11 +7,12 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    
+    <!-- Enlace al CSS en la carpeta raíz -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -24,13 +25,14 @@
         <nav class="navbar">
             <li><a href="#inicio" class="activo">Inicio</a></li>
             <li><a href="#sobre">Sobre mí</a></li>
+            
+            <!-- BOTÓN PARA VOLVER AL PORTUGUÉS -->
+            <li><a href="../index.html" style="color: #a29bfe; font-weight: bold; border: 1px solid #a29bfe; padding: 2px 8px; border-radius: 5px;">PT</a></li>
+            
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#estudos">Formación</a></li>
-            <li><a href="#cursos">Cursos</a></li>
             <li><a href="#projetos">Proyectos</a></li>
             <li><a href="#contato">Contacto</a></li>
-            <!-- Link para voltar ao Português -->
-            <li><a href="../index.html" style="color: #a29bfe;">🇧🇷 PT</a></li>
         </nav>
     </header>
 
@@ -40,17 +42,17 @@
                 <img class="fotoinicio" src="../img/esmirna.webp" alt="fotoinicio">
             </div>
             <div class="social">
-                <a href="https://github.com/EsmirnaM" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/esmirnamarino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://wa.me/5521992201075" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://github.com/EsmirnaM" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/esmirnamarino/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5521992201075" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="inicio-conteudo-texto">
-            <h3 class="prof">Hola, soy</h3>
+            <h3 class="prof">Hola, yo soy</h3>
             <h1 class="meunome"><span>Esmirna Marino A.</span></h1>
-            <p>¡Bienvenido(a) a mi portafolio! Soy una Desarrolladora Backend apasionada por crear soluciones que unan tecnología y estrategia de negocios.</p>
+            <p>Desarrolladora Backend con formación en Administración de Empresas. Especializada en crear soluciones técnicas con visión de negocio.</p>
             <div class="botao_inicio">
-                <a href="https://drive.google.com/file/d/15S3w2OKcDIRTp__UlTTpVsp6GZIiQqmg/view?usp=sharing" class="btn" target="_blank">Ver CV (PDF)</a>
+                <a href="https://drive.google.com/file/d/15S3w2OKcDIRTp__UlTTpVsp6GZIiQqmg/view?usp=sharing" class="btn" target="_blank">Ver Currículum</a>
             </div>
         </div>
     </section>
@@ -60,11 +62,11 @@
         <div class="primeira_parte">
             <img class="fotoesmirna2" src="../img/foto2.jpg" alt="fotoesmirna2">
              <p class="resumo">
-                    Profesional bilingüe (**Español Nativo**) con más de 12 años de experiencia en Brasil.<br>
-                    Graduada en <span class="negrita">Análisis y Desarrollo de Sistemas</span> y <span class="negrita">Administración de Empresas</span>.<br>
-                    Mi formación dual me permite entender los procesos de negocio y transformarlos en soluciones técnicas eficientes.<br>
+                    Profesional colombiana con 12 años en Brasil y apasionada por la tecnología.<br>
+                    Graduada en <span class="negrita">Análisis y Desarrollo de Sistemas</span>,<br>
+                    experiencia en Administración y Contabilidad, brindando una visión integral para soluciones técnicas estratégicas.<br>
                     <br>
-                    Especializada en <span class="negrita">desarrollo back-end</span> y <span class="negrita">análisis de datos con Python</span>. Me apasiona la resolución de problemas lógicos y el diseño de sistemas escalables.
+                    Especialista en <span class="negrita">Back-end</span> y <span class="negrita">Análisis de Datos</span>. Enfocada en optimizar procesos mediante el código.
             </p>
         </div>
     </section>
@@ -78,12 +80,11 @@
             <p>Adaptabilidad, aprendizaje continuo, trabajo en equipo, visión técnica y pensamiento crítico.</p>
         </div>
         <ul class="tecno">
-            <li><span class="html"><i class="fab fa-html5"></i></span><div class="barra_html">HTML</div></li>
-            <li><span class="css3"><i class="fab fa-css3-alt"></i></span><div class="barra_css">CSS</div></li>
             <li><span class="js"><i class="fab fa-js-square"></i></span><div class="barra_js">JavaScript</div></li>
             <li><span class="node"><i class="fab fa-node-js"></i></span><div class="barra_node">Node.js</div></li>
             <li><span class="python"><i class="fab fa-python"></i></span><div class="barra_python">Python</div></li>
             <li><span class="sql"><i class="fas fa-database"></i></span><div class="barra_sql">SQL</div></li>
+            <li><span class="react"><i class="fab fa-react"></i></span><div class="barra_react">React</div></li>
         </ul>
     </section>
 
@@ -91,26 +92,71 @@
         <h2 class="tituloformacao">Mi <span>Formación</span></h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
+                
+                <!-- 1. ADS -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
+                        <div class="logo_estudo"><img class="img_estudo" src="../img/estacio.png" alt="Logo Estácio"></div>
                         <div class="info_estudo">
                             <h2>2022 - 2024</h2>
-                            <h3>Tecnología en Análisis y Desarrollo de Sistemas</h3>
-                            <h4>Faculdade Estácio de Sá</h4>
-                            <p>Capacitada en lógica de programación, bases de datos (SQL/NoSQL) y metodologías ágiles (Scrum/Kanban) para el desarrollo de software escalable.</p>
+                            <h3>Análisis y Desarrollo de Sistemas</h3>
+                            <h4>Facultad Estácio de Sá</h4>
+                            <p>Capacitada en lógica, bases de datos (SQL/NoSQL) y metodologías ágiles para soluciones escalables.</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- 2. Backend Toti -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
+                        <div class="logo_estudo"><img class="img_estudo" src="../img/toti.png" alt="Logo Toti"></div>
                         <div class="info_estudo">
-                            <h2>2018 - 2021</h2>
-                            <h3>Grado en Administración de Empresas</h3>
-                            <h4>Faculdade Estácio de Sá</h4>
-                            <p>Gestión de recursos financieros y humanos, definición de estrategias corporativas y análisis de resultados para la toma de decisiones.</p>
+                            <h2>2022</h2>
+                            <h3>Programación Back-End</h3>
+                            <h4>Toti Diversidade</h4>
+                            <p>Desarrollo de APIs REST con Node.js, Express, MongoDB y control de versiones con Git. (102h).</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- 3. Análisis de Datos -->
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo"><img class="img_estudo" src="../img/toti.png" alt="Logo Toti"></div>
+                        <div class="info_estudo">
+                            <h2>2023</h2>
+                            <h3>Análisis de Datos</h3>
+                            <h4>Instituto NU / Toti</h4>
+                            <p>Uso de Python, Pandas y Power BI para visualización de datos y machine learning. (253h).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Administración -->
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo"><img class="img_estudo" src="../img/estacio.png" alt="Logo Estácio"></div>
+                        <div class="info_estudo">
+                            <h2>2018 - 2021</h2>
+                            <h3>Grado en Administración</h3>
+                            <h4>Facultad Estácio de Sá</h4>
+                            <p>Gestión estratégica de recursos, finanzas y supervisión organizacional para la toma de decisiones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Contabilidad -->
+                <div class="swiper-slide">
+                    <div class="card_estudo">
+                        <div class="logo_estudo"><img class="img_estudo" src="../img/cefa.jpg" alt="Logo CEFA"></div>
+                        <div class="info_estudo">
+                            <h2>Auxiliar Contable</h2>
+                            <h4>CEFA</h4>
+                            <p>Experiencia en lanzamientos contables, conciliación de cuentas y balancetes financieros. (1026h).</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
@@ -121,76 +167,69 @@
     <section class="projetos" id="projetos">
         <h2 class="titulo_projeto">Mis <span>Proyectos</span></h2>
         <div class="projetos_container">
+            
             <div class="projeto_card">
                 <img src="../img/empregamigrante.png" alt="Proyecto 1">
                 <div class="projeto_modal">
                     <h2>EMPREGA MIGRANTES</h2>
-                    <p class="paragrafo_projeto">Plataforma de empleabilidad creada con React y Node.js.</p>
+                    <p class="paragrafo_projeto">Plataforma de empleabilidad para migrantes. Desarrollada con React y Node.js.</p>
                     <div class="botoes_projeto">
                         <a href="https://github.com/EsmirnaM/projetofinalvagas-master" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Proyecto 2: INMI -->
             <div class="projeto_card">
                 <img src="../img/inmi.png" alt="Proyecto 2">
                 <div class="projeto_modal">
                     <h2>INMI</h2>
-                    <p class="paragrafo_projeto">Sitio web del Instituto Multicultural de los Migrantes (INMI), desarrollado en WordPress.</p>
+                    <p class="paragrafo_projeto">Sitio web institucional del Instituto Multicultural de Migrantes (WordPress).</p>
                     <div class="botoes_projeto">
-                        <a href="https://inmiead.com.br" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Ver Sitio</a>
-                        <a href="#" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        <a href="https://inmiead.com.br" target="_blank" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Ver Sitio</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Proyecto 3: Portafolio -->
             <div class="projeto_card">
                 <img src="../img/portfolio.png" alt="Proyecto 3">
                 <div class="projeto_modal">
-                    <h2>Proyecto de Portafolio</h2>
-                    <p class="paragrafo_projeto">Mi portafolio personal, construido con HTML, CSS y JavaScript puro, destacando mis habilidades y diseño responsivo.</p>
+                    <h2>PORTAFOLIO</h2>
+                    <p class="paragrafo_projeto">Mi portafolio personal responsivo, construido con HTML, CSS y JavaScript puro.</p>
                     <div class="botoes_projeto">
                         <a href="https://github.com/EsmirnaM/Portfolio" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
-                        <a href="#" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Demo</a>
                     </div>
                 </div>
             </div>
-            </div>
-          
+
         </div>
     </section>
 
     <section class="contato" id="contato">
-        <h2 class="cabecalho">Entre en <span>Contacto</span></h2>
+        <h2 class="cabecalho">Contacto</h2>
         <form action="../email.php" method="POST" id="formulario-contato">
             <div class="input-box">
                 <div class="input_column">
-                    <label for="nome">Nombre:</label>
-                    <input type="text" placeholder="Nombre" id="nome" required>
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Tu nombre" required>
                 </div>
                 <div class="input_column">
-                    <label for="sobrenome">Apellido:</label>
-                    <input type="text" placeholder="Apellido" id="sobrenome" required>
+                    <label>Apellido:</label>
+                    <input type="text" placeholder="Tu apellido" required>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input_column">
-                    <label for="email">E-mail:</label>
-                    <input type="email" placeholder="E-mail" id="email" required>
-                </div>
-                <div class="input_column">
-                    <label for="telefone">Teléfono:</label>
-                    <input type="number" placeholder="Teléfono" id="telefone" required>
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
                 </div>
             </div>
-            <button type="submit" id="botaoenviar" class="btn">Enviar mensaje</button>
+            <button type="submit" class="btn">Enviar mensaje</button>
         </form>
     </section>
 
     <footer class="footer">
         <div class="texto">
-            <p>Copyright &copy; 2024 by Esmirna Amneris | Todos los derechos reservados.</p>
+            <p>Copyright &copy; 2026 by Esmirna Amneris | Todos los derechos reservados.</p>
         </div>
         <div class="subir">
             <a href="#inicio"><i class="fa-solid fa-angle-up"></i></a>
