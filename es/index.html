@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- Enlace al CSS en la carpeta raíz -->
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -25,14 +24,13 @@
         <nav class="navbar">
             <li><a href="#inicio" class="activo">Inicio</a></li>
             <li><a href="#sobre">Sobre mí</a></li>
-            
-            <!-- BOTÓN PARA VOLVER AL PORTUGUÉS -->
-            <li><a href="../index.html" style="color: #a29bfe; font-weight: bold; border: 1px solid #a29bfe; padding: 2px 8px; border-radius: 5px;">PT</a></li>
-            
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#estudos">Formación</a></li>
+            <li><a href="#cursos">Cursos</a></li>
             <li><a href="#projetos">Proyectos</a></li>
             <li><a href="#contato">Contacto</a></li>
+            <!-- Botón de idioma al final para que quede a la derecha -->
+            <li><a href="../index.html" style="color: #a29bfe; font-weight: bold; border: 1px solid #a29bfe; padding: 2px 8px; border-radius: 5px; margin-left: 15px;">PT</a></li>
         </nav>
     </header>
 
@@ -50,7 +48,7 @@
         <div class="inicio-conteudo-texto">
             <h3 class="prof">Hola, yo soy</h3>
             <h1 class="meunome"><span>Esmirna Marino A.</span></h1>
-            <p>Desarrolladora Backend con formación en Administración de Empresas. Especializada en crear soluciones técnicas con visión de negocio.</p>
+            <p>Desarrolladora Backend con formación en Administración de Empresas. Especializada en soluciones técnicas con enfoque en procesos de negocio.</p>
             <div class="botao_inicio">
                 <a href="https://drive.google.com/file/d/15S3w2OKcDIRTp__UlTTpVsp6GZIiQqmg/view?usp=sharing" class="btn" target="_blank">Ver Currículum</a>
             </div>
@@ -62,11 +60,11 @@
         <div class="primeira_parte">
             <img class="fotoesmirna2" src="../img/foto2.jpg" alt="fotoesmirna2">
              <p class="resumo">
-                    Profesional colombiana con 12 años en Brasil y apasionada por la tecnología.<br>
-                    Graduada en <span class="negrita">Análisis y Desarrollo de Sistemas</span>,<br>
-                    experiencia en Administración y Contabilidad, brindando una visión integral para soluciones técnicas estratégicas.<br>
+                    Profesional bilingüe con 12 años en Brasil y apasionada por la tecnología.<br>
+                    Graduada en <span class="negrita">Análisis y Desarrollo de Sistemas</span> y <span class="negrita">Administración</span>.<br>
+                    Mi perfil dual me permite crear herramientas técnicas que entienden las necesidades reales de una empresa.<br>
                     <br>
-                    Especialista en <span class="negrita">Back-end</span> y <span class="negrita">Análisis de Datos</span>. Enfocada en optimizar procesos mediante el código.
+                    Enfocada en <span class="negrita">Back-end</span> y <span class="negrita">Análisis de Datos</span> para optimizar la toma de decisiones.
             </p>
         </div>
     </section>
@@ -75,9 +73,9 @@
         <h2>Mis <span>Habilidades</span></h2>
         <div class="soft-hard">
             <h3>Habilidades técnicas (Hard skills):</h3> 
-            <p>Node.js, Express, SQL, MongoDB, JavaScript, Python, Power BI, React.</p>
+            <p>Node.js, Express, SQL Server, Python, MongoDB, Power BI, React, Git.</p>
             <h3>Habilidades interpersonales (Soft skills):</h3> 
-            <p>Adaptabilidad, aprendizaje continuo, trabajo en equipo, visión técnica y pensamiento crítico.</p>
+            <p>Adaptabilidad, trabajo en equipo, visión técnica, pensamiento crítico y aprendizaje continuo.</p>
         </div>
         <ul class="tecno">
             <li><span class="js"><i class="fab fa-js-square"></i></span><div class="barra_js">JavaScript</div></li>
@@ -93,7 +91,6 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 
-                <!-- 1. ADS -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
                         <div class="logo_estudo"><img class="img_estudo" src="../img/estacio.png" alt="Logo Estácio"></div>
@@ -101,12 +98,11 @@
                             <h2>2022 - 2024</h2>
                             <h3>Análisis y Desarrollo de Sistemas</h3>
                             <h4>Facultad Estácio de Sá</h4>
-                            <p>Capacitada en lógica, bases de datos (SQL/NoSQL) y metodologías ágiles para soluciones escalables.</p>
+                            <p>Lógica de programación, bases de datos y metodologías ágiles para el desarrollo de software corporativo.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 2. Backend Toti -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
                         <div class="logo_estudo"><img class="img_estudo" src="../img/toti.png" alt="Logo Toti"></div>
@@ -114,12 +110,11 @@
                             <h2>2022</h2>
                             <h3>Programación Back-End</h3>
                             <h4>Toti Diversidade</h4>
-                            <p>Desarrollo de APIs REST con Node.js, Express, MongoDB y control de versiones con Git. (102h).</p>
+                            <p>Desarrollo de APIs con Node.js, Express, MongoDB y versionamiento con Git. (102h).</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. Análisis de Datos -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
                         <div class="logo_estudo"><img class="img_estudo" src="../img/toti.png" alt="Logo Toti"></div>
@@ -127,12 +122,11 @@
                             <h2>2023</h2>
                             <h3>Análisis de Datos</h3>
                             <h4>Instituto NU / Toti</h4>
-                            <p>Uso de Python, Pandas y Power BI para visualización de datos y machine learning. (253h).</p>
+                            <p>Uso de Python, SQL y Power BI para visualización de datos y machine learning. (253h).</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 4. Administración -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
                         <div class="logo_estudo"><img class="img_estudo" src="../img/estacio.png" alt="Logo Estácio"></div>
@@ -140,19 +134,18 @@
                             <h2>2018 - 2021</h2>
                             <h3>Grado en Administración</h3>
                             <h4>Facultad Estácio de Sá</h4>
-                            <p>Gestión estratégica de recursos, finanzas y supervisión organizacional para la toma de decisiones.</p>
+                            <p>Gestión estratégica, finanzas y supervisión organizacional para la toma de decisiones administrativas.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. Contabilidad -->
                 <div class="swiper-slide">
                     <div class="card_estudo">
                         <div class="logo_estudo"><img class="img_estudo" src="../img/cefa.jpg" alt="Logo CEFA"></div>
                         <div class="info_estudo">
                             <h2>Auxiliar Contable</h2>
                             <h4>CEFA</h4>
-                            <p>Experiencia en lanzamientos contables, conciliación de cuentas y balancetes financieros. (1026h).</p>
+                            <p>Experiencia en conciliación de cuentas y organización de documentos fiscales y financieros. (1026h).</p>
                         </div>
                     </div>
                 </div>
@@ -164,43 +157,65 @@
         </div>
     </section>
 
+    <section class="cursos" id="cursos">
+        <h2 class="titulocursos">Cursos <span>complementarios</span></h2>
+        <div class="informacaocursos">
+            <div class="curso">
+                <h3>GIT BÁSICO A AVANZADO</h3>
+                <h4>UDEMY - 7h</h4>
+                <p>Dominio de flujos de trabajo colaborativos y gestión de repositorios en GitHub.</p>
+            </div>
+            <div class="curso">
+                <h3>LIDERAZGO Y AUTOCONOCIMIENTO</h3>
+                <h4>TOTI - 16h</h4>
+                <p>Habilidades en comunicación, resolución de conflictos y gestión de equipos de trabajo.</p>
+            </div>
+            <div class="curso">
+                <h3>ADOBE PHOTOSHOP CS5</h3>
+                <h4>SENA - 40h</h4>
+                <p>Edición y tratamiento de imágenes digitales para proyectos visuales profesionales.</p>
+            </div>
+            <div class="curso">
+                <h3>NODE.JS: CERO A MAESTRÍA</h3>
+                <h4>UDEMY - 38h</h4>
+                <p>Arquitectura MVC, APIs con Express e integración con MySQL y MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="projetos" id="projetos">
         <h2 class="titulo_projeto">Mis <span>Proyectos</span></h2>
         <div class="projetos_container">
-            
             <div class="projeto_card">
                 <img src="../img/empregamigrante.png" alt="Proyecto 1">
                 <div class="projeto_modal">
                     <h2>EMPREGA MIGRANTES</h2>
-                    <p class="paragrafo_projeto">Plataforma de empleabilidad para migrantes. Desarrollada con React y Node.js.</p>
+                    <p class="paragrafo_projeto">Plataforma de empleabilidad creada con React y Node.js.</p>
                     <div class="botoes_projeto">
                         <a href="https://github.com/EsmirnaM/projetofinalvagas-master" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
                     </div>
                 </div>
             </div>
-
             <div class="projeto_card">
                 <img src="../img/inmi.png" alt="Proyecto 2">
                 <div class="projeto_modal">
                     <h2>INMI</h2>
-                    <p class="paragrafo_projeto">Sitio web institucional del Instituto Multicultural de Migrantes (WordPress).</p>
+                    <p class="paragrafo_projeto">Sitio web institucional multicultural desarrollado en WordPress.</p>
                     <div class="botoes_projeto">
                         <a href="https://inmiead.com.br" target="_blank" class="botao_projeto"><i class="fas fa-external-link-alt"></i> Ver Sitio</a>
                     </div>
                 </div>
             </div>
-
             <div class="projeto_card">
                 <img src="../img/portfolio.png" alt="Proyecto 3">
                 <div class="projeto_modal">
                     <h2>PORTAFOLIO</h2>
-                    <p class="paragrafo_projeto">Mi portafolio personal responsivo, construido con HTML, CSS y JavaScript puro.</p>
+                    <p class="paragrafo_projeto">Diseño responsivo creado con HTML, CSS y JavaScript puro.</p>
                     <div class="botoes_projeto">
                         <a href="https://github.com/EsmirnaM/Portfolio" target="_blank" class="botao_projeto"><i class="fa-brands fa-github"></i> Código</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -210,17 +225,11 @@
             <div class="input-box">
                 <div class="input_column">
                     <label>Nombre:</label>
-                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="text" placeholder="Nombre" required>
                 </div>
                 <div class="input_column">
                     <label>Apellido:</label>
-                    <input type="text" placeholder="Tu apellido" required>
-                </div>
-            </div>
-            <div class="input-box">
-                <div class="input_column">
-                    <label>E-mail:</label>
-                    <input type="email" placeholder="correo@ejemplo.com" required>
+                    <input type="text" placeholder="Apellido" required>
                 </div>
             </div>
             <button type="submit" class="btn">Enviar mensaje</button>
